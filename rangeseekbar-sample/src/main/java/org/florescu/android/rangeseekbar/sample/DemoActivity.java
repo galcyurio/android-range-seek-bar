@@ -17,12 +17,11 @@ limitations under the License.
 
 package org.florescu.android.rangeseekbar.sample;
 
+import org.florescu.android.rangeseekbar.RangeSeekBar;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-
-import org.florescu.android.rangeseekbar.RangeSeekBar;
 
 public class DemoActivity extends Activity {
 
@@ -42,11 +41,11 @@ public class DemoActivity extends Activity {
         rangeSeekBar.setSelectedMaxValue(88);
 
         // Add to layout
-        FrameLayout layout = (FrameLayout) findViewById(R.id.seekbar_placeholder);
+        FrameLayout layout = findViewById(R.id.seekbar_placeholder);
         layout.addView(rangeSeekBar);
 
         // Seek bar for which we will set text color in code
-        RangeSeekBar rangeSeekBarTextColorWithCode = (RangeSeekBar) findViewById(R.id.rangeSeekBarTextColorWithCode);
+        RangeSeekBar rangeSeekBarTextColorWithCode = findViewById(R.id.rangeSeekBarTextColorWithCode);
         rangeSeekBarTextColorWithCode.setTextAboveThumbsColorResource(android.R.color.holo_blue_bright);
     }
 }

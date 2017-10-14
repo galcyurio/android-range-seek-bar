@@ -53,7 +53,7 @@ The rangeseekbar-sample shows the available features and customizations in code 
 	}
 ```
 
- Using the latest work-in-progress snapshot also requires including the snapshot repository as a depencency:
+ Using the latest work-in-progress snapshot also requires including the snapshot repository as a dependency:
  
  ```groovy
 apply plugin: 'com.android.application'

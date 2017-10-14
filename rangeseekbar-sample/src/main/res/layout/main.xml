@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:rsb="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -13,7 +14,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar initialized in code with ranges set"/>
+            android:text="Range seek bar initialized in code with ranges set"
+            tools:ignore="HardcodedText"/>
 
         <FrameLayout
             android:id="@+id/seekbar_placeholder"
@@ -24,7 +26,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with default range"/>
+            android:text="Range seek bar from xml with default range"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -33,8 +36,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with ranges set"/>
-
+            android:text="Range seek bar from xml with ranges set"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -45,21 +48,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with ranges and step set"/>
-
+            android:text="Range seek bar from xml with ranges and step set"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
             rsb:absoluteMinValue="20"
-            rsb:step="10" />
+            rsb:step="10"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with ranges set and double values"/>
-
+            android:text="Range seek bar from xml with ranges set and double values"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -70,8 +73,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with single thumb to true"/>
-
+            android:text="Range seek bar from xml with single thumb to true"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -83,7 +86,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with custom color to text above thumbs "/>
+            android:text="Range seek bar from xml with custom color to text above thumbs "
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -96,7 +100,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from code with custom color to text above thumbs "/>
+            android:text="Range seek bar from code with custom color to text above thumbs "
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:id="@+id/rangeSeekBarTextColorWithCode"
@@ -109,8 +114,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Range seek bar from xml with custom thumb handle"/>
-
+            android:text="Range seek bar from xml with custom thumb handle"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -126,8 +131,8 @@
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:paddingTop="8dp"
-            android:text="Range seek bar from xml with no text above"/>
-
+            android:text="Range seek bar from xml with no text above"
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -136,13 +141,12 @@
             rsb:absoluteMinValue="20"
             rsb:valuesAboveThumbs="false"/>
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:text="Range seek bar from xml with thumb shadow"
-            />
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -160,7 +164,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:text="Range seek bar from xml with custom shadow"
-            />
+            tools:ignore="HardcodedText"/>
 
         <org.florescu.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
@@ -173,12 +177,8 @@
             rsb:thumbPressed="@drawable/custom_slider_thumb"
             rsb:thumbShadow="true"
             rsb:thumbShadowBlur="3dp"
-            rsb:thumbShadowColor="@color/primary_material_light"
+            rsb:thumbShadowColor="#fff5f5f5"
             rsb:thumbShadowXOffset="1dp"
-            rsb:thumbShadowYOffset="2dp"
-            />
-
-
+            rsb:thumbShadowYOffset="2dp"/>
     </LinearLayout>
-
 </ScrollView>

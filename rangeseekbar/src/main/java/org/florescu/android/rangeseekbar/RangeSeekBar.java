@@ -39,6 +39,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -295,7 +296,7 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
     }
 
     public void setTextAboveThumbsColorResource(@ColorRes int resId) {
-        setTextAboveThumbsColor(getResources().getColor(resId));
+        setTextAboveThumbsColor(ContextCompat.getColor(getContext(), resId));
     }
 
     @SuppressWarnings("unchecked")
