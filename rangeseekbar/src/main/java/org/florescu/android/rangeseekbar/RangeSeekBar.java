@@ -17,6 +17,11 @@ limitations under the License.
 
 package org.florescu.android.rangeseekbar;
 
+import org.florescu.android.util.BitmapUtil;
+import org.florescu.android.util.PixelUtil;
+
+import java.math.BigDecimal;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -34,16 +39,11 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
-import android.widget.ImageView;
-
-import org.florescu.android.util.BitmapUtil;
-import org.florescu.android.util.PixelUtil;
-
-import java.math.BigDecimal;
 
 /**
  * Widget that lets users select a minimum and maximum value on a given numerical range.
@@ -58,7 +58,7 @@ import java.math.BigDecimal;
  * @author Alex Florescu (alex@florescu.org)
  * @author Michael Keppler (bananeweizen@gmx.de)
  */
-public class RangeSeekBar<T extends Number> extends ImageView {
+public class RangeSeekBar<T extends Number> extends AppCompatImageView {
     /**
      * Default color of a {@link RangeSeekBar}, #FF33B5E5. This is also known as "Ice Cream Sandwich" blue.
      */
