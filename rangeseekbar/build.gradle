@@ -1,24 +1,15 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-    }
-}
-
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '25.0.0'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -27,21 +18,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    android.sourceSets.test.java.srcDirs += "build/generated/source/r/debug"
 }
 
 dependencies {
-    repositories {
-        mavenCentral()
-    }
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.android.support:appcompat-v7:$supportLibrary"
+    compile "com.android.support:support-annotations:$supportLibrary"
 
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:support-annotations:23.4.0'
-
-    // Robolectric
-    testCompile 'org.robolectric:robolectric:3.1-rc1'
-    testCompile "org.mockito:mockito-core:2.0.53-beta"
+    // Test
+    testCompile "org.robolectric:robolectric:$robolectric"
+    testCompile "org.mockito:mockito-core:$mockito"
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
