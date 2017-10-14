@@ -1,4 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'galcyurio'
+    groupId = 'com.github.galcyurio'
+    artifactId = 'rangeseekbar'
+    publishVersion = rootProject.ext.versionName
+    desc = 'It provides a SeekBar similar to the default Android one, but with two thumb controls allowing a range to be selected, and some other extras as well.'
+    website = 'https://github.com/galcyurio/android-range-seek-bar'
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -27,6 +37,7 @@ dependencies {
 
     // Test
     testCompile "org.robolectric:robolectric:$robolectric"
+    testCompile "junit:junit:$junit"
     testCompile "org.mockito:mockito-core:$mockito"
 }
 

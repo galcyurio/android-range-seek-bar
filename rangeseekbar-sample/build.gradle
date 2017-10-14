@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-
     defaultConfig {
         applicationId rootProject.ext.applicationId
         minSdkVersion rootProject.ext.minSdkVersion
@@ -24,6 +23,11 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:appcompat-v7:$supportLibrary"
+
+    // Test
+    testCompile "org.robolectric:robolectric:$robolectric"
+    testCompile "junit:junit:$junit"
+    testCompile "org.mockito:mockito-core:$mockito"
 
     compile project(':rangeseekbar')
 }
