@@ -29,7 +29,7 @@
             android:text="Range seek bar from xml with default range"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -39,7 +39,7 @@
             android:text="Range seek bar from xml with ranges set"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -51,7 +51,7 @@
             android:text="Range seek bar from xml with ranges and step set"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -64,7 +64,7 @@
             android:text="Range seek bar from xml with ranges set and double values"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="140.54"
@@ -76,7 +76,7 @@
             android:text="Range seek bar from xml with single thumb to true"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -89,7 +89,7 @@
             android:text="Range seek bar from xml with custom color to text above thumbs "
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -103,7 +103,7 @@
             android:text="Range seek bar from code with custom color to text above thumbs "
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:id="@+id/rangeSeekBarTextColorWithCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
             android:text="Range seek bar from xml with custom thumb handle"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -134,7 +134,7 @@
             android:text="Range seek bar from xml with no text above"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -148,7 +148,7 @@
             android:text="Range seek bar from xml with thumb shadow"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"
@@ -166,7 +166,7 @@
             android:text="Range seek bar from xml with custom shadow"
             tools:ignore="HardcodedText"/>
 
-        <org.florescu.android.rangeseekbar.RangeSeekBar
+        <com.github.galcyurio.android.rangeseekbar.RangeSeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             rsb:absoluteMaxValue="150"

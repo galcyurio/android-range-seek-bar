@@ -1,4 +1,4 @@
-package org.florescu.android.rangeseekbar;
+package com.github.galcyurio.android.rangeseekbar;
 
 import org.junit.Assert;
 import org.junit.Test;

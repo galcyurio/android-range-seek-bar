@@ -15,9 +15,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package org.florescu.android.rangeseekbar.sample;
+package com.github.galcyurio.android.rangeseekbar.sample;
 
-import org.florescu.android.rangeseekbar.RangeSeekBar;
+import com.github.galcyurio.android.rangeseekbar.RangeSeekBar;
 
 import android.app.Activity;
 import android.os.Bundle;

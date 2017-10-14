@@ -15,10 +15,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package org.florescu.android.rangeseekbar;
+package com.github.galcyurio.android.rangeseekbar;
 
-import org.florescu.android.rangeseekbar.util.BitmapUtil;
-import org.florescu.android.rangeseekbar.util.PixelUtil;
+import com.github.galcyurio.android.rangeseekbar.util.BitmapUtil;
+import com.github.galcyurio.android.rangeseekbar.util.PixelUtil;
 
 import java.math.BigDecimal;
 
