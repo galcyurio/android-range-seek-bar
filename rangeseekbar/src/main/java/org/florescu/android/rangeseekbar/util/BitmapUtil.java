@@ -1,4 +1,4 @@
-package org.florescu.android.util;
+package org.florescu.android.rangeseekbar.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

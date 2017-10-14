@@ -17,8 +17,8 @@ limitations under the License.
 
 package org.florescu.android.rangeseekbar;
 
-import org.florescu.android.util.BitmapUtil;
-import org.florescu.android.util.PixelUtil;
+import org.florescu.android.rangeseekbar.util.BitmapUtil;
+import org.florescu.android.rangeseekbar.util.PixelUtil;
 
 import java.math.BigDecimal;
 
