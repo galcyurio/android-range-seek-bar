@@ -1,9 +1,8 @@
-range-seek-bar
-======================
+# RangeSeekBar
 
 # Introduction
 
-If you are coming from [the original repo](https://github.com/yahoo/android-range-seek-bar), it has a [new home](https://github.com/anothem/android-range-seek-bar) so if you're seeing this, you're probably in the right place.
+This is fork repository of [android-range-seek-bar](https://github.com/anothem/android-range-seek-bar). I created this repository because the original maintainer is no longer maintain it.
 
 This library provides a SeekBar similar to the default Android one, but with two thumb controls allowing a range to be selected.
 
@@ -39,34 +38,16 @@ The rangeseekbar-sample shows the available features and customizations in code 
 
  * For latest release: 
 
-```groovy
-	dependencies {
-    	compile 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
-	}
-```
-
- * For the latest work-in-progress snapshot:
-
-```groovy
-	dependencies {
-    	compile 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.4.0-SNAPSHOT'
-	}
-```
-
- Using the latest work-in-progress snapshot also requires including the snapshot repository as a dependency:
- 
- ```groovy
-apply plugin: 'com.android.application'
-repositories {
-	maven {
-		url "https://oss.sonatype.org/content/repositories/snapshots"
-	}
+```gradle
+dependencies {
+	compile 'com.github.galcyurio:rangeseekbar:0.5.0'
 }
 ```
 
 # Credits
 
-The android-range-seek-bar started as a fork of the following project: https://code.google.com/p/range-seek-bar/ under Apache license.
+~~The android-range-seek-bar started as a fork of the following project: https://code.google.com/p/range-seek-bar/ under Apache license.~~  
+This repository is a fork of the following repository: https://github.com/anothem/android-range-seek-bar under Apache license and Created Commons license.
 
 # License
 
