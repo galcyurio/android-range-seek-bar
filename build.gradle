@@ -4,15 +4,15 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-        classpath 'com.novoda:bintray-release:0.4.0'
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.novoda:bintray-release:0.5.0'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
-        maven { url 'https://maven.google.com' }
+        google()
     }
 }
 
@@ -22,7 +22,7 @@ task clean(type: Delete) {
 
 ext {
     compileSdkVersion = 26
-    buildToolsVersion = '26.0.2'
+    buildToolsVersion = '27.0.0'
 
     applicationId = 'com.github.galcyurio.android.rangeseekbar.sample'
     minSdkVersion = 15
@@ -30,7 +30,7 @@ ext {
     versionCode = 2
     versionName = '0.5.0'
 
-    supportLibrary = '26.1.0'
+    supportLibrary = '27.0.0'
     robolectric = '3.4.2'
     junit = '4.12'
     mockito = '2.10.0'
