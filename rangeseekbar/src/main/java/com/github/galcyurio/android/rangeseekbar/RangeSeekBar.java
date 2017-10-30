@@ -17,11 +17,6 @@ limitations under the License.
 
 package com.github.galcyurio.android.rangeseekbar;
 
-import com.github.galcyurio.android.rangeseekbar.util.BitmapUtil;
-import com.github.galcyurio.android.rangeseekbar.util.PixelUtil;
-
-import java.math.BigDecimal;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -46,6 +41,11 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 
+import com.github.galcyurio.android.rangeseekbar.util.BitmapUtil;
+import com.github.galcyurio.android.rangeseekbar.util.PixelUtil;
+
+import java.math.BigDecimal;
+
 /**
  * Widget that lets users select a minimum and maximum value on a given numerical range.
  * The range value types can be one of Long, Double, Integer, Float, Short, Byte or BigDecimal.<br>
@@ -59,6 +59,7 @@ import android.view.ViewConfiguration;
  * @author Alex Florescu (alex@florescu.org)
  * @author Michael Keppler (bananeweizen@gmx.de)
  */
+@SuppressWarnings("unused")
 public class RangeSeekBar<T extends Number> extends AppCompatImageView {
     /**
      * Default color of a {@link RangeSeekBar}, #FF33B5E5. This is also known as "Ice Cream Sandwich" blue.
@@ -315,13 +316,11 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
         numberType = NumberType.fromNumber(absoluteMinValue);
     }
 
-    @SuppressWarnings("unused")
     public void resetSelectedValues() {
         setSelectedMinValue(absoluteMinValue);
         setSelectedMaxValue(absoluteMaxValue);
     }
 
-    @SuppressWarnings("unused")
     public boolean isNotifyWhileDragging() {
         return notifyWhileDragging;
     }
@@ -329,7 +328,6 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
     /**
      * Should the widget notify the listener callback while the user is still dragging a thumb? Default is false.
      */
-    @SuppressWarnings("unused")
     public void setNotifyWhileDragging(boolean flag) {
         this.notifyWhileDragging = flag;
     }
@@ -418,7 +416,6 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
      *
      * @param listener The listener to notify about changed selected values.
      */
-    @SuppressWarnings("unused")
     public void setOnRangeSeekBarChangeListener(OnRangeSeekBarChangeListener<T> listener) {
         this.listener = listener;
     }
@@ -430,7 +427,6 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
      *
      * @param thumbShadowPath The path defining the thumb shadow
      */
-    @SuppressWarnings("unused")
     public void setThumbShadowPath(Path thumbShadowPath) {
         this.thumbShadowPath = thumbShadowPath;
     }
