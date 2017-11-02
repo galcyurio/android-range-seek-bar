@@ -7,7 +7,7 @@ This is fork repository of [android-range-seek-bar](https://github.com/anothem/a
 
 This library provides a SeekBar similar to the default Android one, but with two thumb controls allowing a range to be selected.
 
-![](demo_screenshot.png)
+![](images/demo.png)
 
 # Features and customizations
 
