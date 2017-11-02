@@ -1,4 +1,5 @@
 # RangeSeekBar
+[![Build Status](https://travis-ci.org/galcyurio/android-range-seek-bar.svg?branch=master)](https://travis-ci.org/galcyurio/android-range-seek-bar)
 
 # Introduction
 
