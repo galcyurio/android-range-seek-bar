@@ -1,4 +1,5 @@
 # RangeSeekBar
+[![Build Status](https://travis-ci.org/galcyurio/android-range-seek-bar.svg?branch=master)](https://travis-ci.org/galcyurio/android-range-seek-bar)
 
 # Introduction
 
@@ -6,7 +7,7 @@ This is fork repository of [android-range-seek-bar](https://github.com/anothem/a
 
 This library provides a SeekBar similar to the default Android one, but with two thumb controls allowing a range to be selected.
 
-![](demo_screenshot.png)
+![](images/demo.png)
 
 # Features and customizations
 
@@ -36,21 +37,36 @@ The rangeseekbar-sample shows the available features and customizations in code 
 
 * Add this in your build.gradle file:
 
- * For latest release: 
+* For latest release: 
 
 ```gradle
 dependencies {
-	compile 'com.github.galcyurio:rangeseekbar:0.5.0'
+    compile 'com.github.galcyurio:rangeseekbar:0.5.0'
 }
 ```
 
 # Credits
 
-~~The android-range-seek-bar started as a fork of the following project: https://code.google.com/p/range-seek-bar/ under Apache license.~~  
+The android-range-seek-bar started as a fork of the following project: https://code.google.com/p/range-seek-bar/ under Apache license.  
 This repository is a fork of the following repository: https://github.com/anothem/android-range-seek-bar under Apache license and Created Commons license.
 
 # License
 
 The images are licensed under Creative Commons ( http://creativecommons.org/licenses/by/3.0/ ). The originals are provided in the original project ( https://code.google.com/p/range-seek-bar/ ) and seek_thumb_disabled.png is added by us.
 
-The source code is licensed under the Apache License. A copy of this can be found at http://www.apache.org/licenses/LICENSE-2.0 and has been included in the repository as well.
+
+````copyright
+Copyright 2016 Alex Florescu
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+````
