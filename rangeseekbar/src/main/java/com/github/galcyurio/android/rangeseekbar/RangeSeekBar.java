@@ -122,7 +122,7 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
 
     private boolean singleThumb;
     private boolean alwaysActive;
-    private boolean showLabels;
+    @Deprecated private boolean showLabels;
     private boolean showTextAboveThumbs;
     private float internalPad;
     private int activeColor;
@@ -206,7 +206,7 @@ public class RangeSeekBar<T extends Number> extends AppCompatImageView {
                 showTextAboveThumbs = a.getBoolean(R.styleable.RangeSeekBar_valuesAboveThumbs, true);
                 textAboveThumbsColor = a.getColor(R.styleable.RangeSeekBar_textAboveThumbsColor, Color.WHITE);
                 singleThumb = a.getBoolean(R.styleable.RangeSeekBar_singleThumb, false);
-                showLabels = a.getBoolean(R.styleable.RangeSeekBar_showLabels, true);
+                showLabels = a.getBoolean(R.styleable.RangeSeekBar_showLabels, false);
                 internalPad = a.getDimensionPixelSize(R.styleable.RangeSeekBar_internalPadding, INITIAL_PADDING_IN_DP);
                 barHeight = a.getDimensionPixelSize(R.styleable.RangeSeekBar_barHeight, LINE_HEIGHT_IN_DP);
                 activeColor = a.getColor(R.styleable.RangeSeekBar_activeColor, ACTIVE_COLOR);
